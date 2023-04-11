@@ -6,7 +6,7 @@
 /*   By: hubrygo <hubrygo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/10 18:59:15 by hubrygo           #+#    #+#             */
-/*   Updated: 2023/04/10 20:04:15 by hubrygo          ###   ########.fr       */
+/*   Updated: 2023/04/11 13:56:20 by hubrygo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,20 +15,22 @@
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*temp;
+	t_list	*ret;
 
-	if (!lst)
+	if (!lst || !del || !f)
 		return (NULL);
-	while (lst->next)
+	ret = NULL;
+	while (lst)
 	{
 		temp = ft_lstnew(f(lst->content));
-		if(!temp)
+		if (!temp)
 		{
-			del(temp);
-			ft_lstclear(&temp, del);
+			ft_lstclear(&ret, del);
 			return (NULL);
 		}
-		ft_lstadd_back(&lst, temp);
+		ft_lstadd_back(&ret, temp);
 		lst = lst->next;
 	}
-	return (lst);
+	system("leaks a.out");
+	return (ret);
 }

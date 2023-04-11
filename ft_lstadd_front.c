@@ -6,7 +6,7 @@
 /*   By: hubrygo <hubrygo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/10 16:45:06 by hubrygo           #+#    #+#             */
-/*   Updated: 2023/04/10 20:00:58 by hubrygo          ###   ########.fr       */
+/*   Updated: 2023/04/11 10:51:05 by hubrygo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,6 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	if (!new)
 		return ;
 	if (lst)
-		*new->next = *lst;
-	*lst = *new;
+		new->next = *lst;
+	*lst = new;
 }

@@ -6,7 +6,7 @@
 /*   By: hubrygo <hubrygo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 11:11:35 by hubrygo           #+#    #+#             */
-/*   Updated: 2023/04/10 15:53:03 by hubrygo          ###   ########.fr       */
+/*   Updated: 2023/04/11 13:40:13 by hubrygo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,7 +93,7 @@ char	*ft_itoa(int n)
 		str = ft_is_special(n);
 		return (str);
 	}
-	str = malloc(sizeof(char) * i + 1);
+	str = malloc(sizeof(char) * (i + 1));
 	if (!str)
 		return (NULL);
 	str[i] = '\0';
@@ -101,10 +101,8 @@ char	*ft_itoa(int n)
 	if (n < 0)
 	{
 		str[0] = '-';
-		n *= -1;
+		str = ft_is_negatif(-n, str, i);
 	}
-	if (str[0] == '-')
-		str = ft_is_negatif(n, str, i);
 	else
 		str = ft_is_positif(n, str, i);
 	return (str);

@@ -6,7 +6,7 @@
 /*   By: hubrygo <hubrygo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 14:42:56 by hubrygo           #+#    #+#             */
-/*   Updated: 2023/04/10 20:08:30 by hubrygo          ###   ########.fr       */
+/*   Updated: 2023/04/11 11:51:07 by hubrygo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@
 # include<unistd.h>
 # include<stdlib.h>
 
-typedef	struct	s_list
+typedef struct s_list
 {
-	void		*content;
+	void			*content;
 	struct s_list	*next;
 }				t_list;
 
@@ -58,6 +58,7 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 t_list	*ft_lstnew(void *content);
 void	ft_lstadd_front(t_list **lst, t_list *new);
+void	ft_lstadd_back(t_list **lst, t_list *new);
 int		ft_lstsize(t_list *lst);
 t_list	*ft_lstlast(t_list *lst);
 void	ft_lstdelone(t_list *lst, void (*del)(void*));

@@ -6,7 +6,7 @@
 /*   By: hubrygo <hubrygo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/10 16:57:45 by hubrygo           #+#    #+#             */
-/*   Updated: 2023/04/10 20:04:18 by hubrygo          ###   ########.fr       */
+/*   Updated: 2023/04/11 12:06:52 by hubrygo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ int	ft_lstsize(t_list *lst)
 	int	i;
 
 	if (!lst)
-		return (NULL);
+		return (0);
 	i = 0;
-	while (lst->next)
+	while (lst)
 	{
 		lst = lst->next;
 		i++;

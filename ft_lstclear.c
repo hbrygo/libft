@@ -6,7 +6,7 @@
 /*   By: hubrygo <hubrygo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/10 17:26:08 by hubrygo           #+#    #+#             */
-/*   Updated: 2023/04/10 20:00:59 by hubrygo          ###   ########.fr       */
+/*   Updated: 2023/04/11 12:09:45 by hubrygo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,16 @@
 
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
+	t_list	*temp;
+
 	if (!lst)
-		return (NULL);
-	if (lst->next)
+		return ;
+	while (*lst)
 	{
-		lst = lst->next;
-		ft_lstclear(lst, del);
+		temp = *lst;
+		*lst = (*lst)->next;
+		del(temp->content);
+		free(temp);
 	}
-	del(lst->next);
-	lst->content = NULL;
 	return ;
 }

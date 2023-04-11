@@ -6,12 +6,11 @@
 /*   By: hubrygo <hubrygo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 14:27:21 by hubrygo           #+#    #+#             */
-/*   Updated: 2023/04/06 13:42:25 by hubrygo          ###   ########.fr       */
+/*   Updated: 2023/04/11 13:59:45 by hubrygo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static int	skip(char *str)
 {
