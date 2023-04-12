@@ -6,7 +6,7 @@
 /*   By: hubrygo <hubrygo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/10 16:57:45 by hubrygo           #+#    #+#             */
-/*   Updated: 2023/04/11 12:06:52 by hubrygo          ###   ########.fr       */
+/*   Updated: 2023/04/11 15:03:15 by hubrygo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,5 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (i);
 }
+
+//Fonction qui renvoie le nombre de noeud qu'il y a dans une list

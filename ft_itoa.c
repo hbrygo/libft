@@ -6,7 +6,7 @@
 /*   By: hubrygo <hubrygo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 11:11:35 by hubrygo           #+#    #+#             */
-/*   Updated: 2023/04/11 13:40:13 by hubrygo          ###   ########.fr       */
+/*   Updated: 2023/04/11 15:13:28 by hubrygo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,3 +107,5 @@ char	*ft_itoa(int n)
 		str = ft_is_positif(n, str, i);
 	return (str);
 }
+
+//Fonction qui transforme un int en char *

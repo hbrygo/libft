@@ -6,7 +6,7 @@
 /*   By: hubrygo <hubrygo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/10 16:45:06 by hubrygo           #+#    #+#             */
-/*   Updated: 2023/04/11 10:51:05 by hubrygo          ###   ########.fr       */
+/*   Updated: 2023/04/11 14:57:07 by hubrygo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,3 +20,5 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 		new->next = *lst;
 	*lst = new;
 }
+
+//Fonction qui ajoute new au debut de lst

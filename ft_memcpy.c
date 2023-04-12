@@ -6,7 +6,7 @@
 /*   By: hubrygo <hubrygo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 11:11:49 by hubrygo           #+#    #+#             */
-/*   Updated: 2023/04/04 15:46:36 by hubrygo          ###   ########.fr       */
+/*   Updated: 2023/04/11 15:05:29 by hubrygo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,5 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+//Fonction qui copy les n premier characteres de src dans dst

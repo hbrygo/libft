@@ -6,7 +6,7 @@
 /*   By: hubrygo <hubrygo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/10 17:08:48 by hubrygo           #+#    #+#             */
-/*   Updated: 2023/04/11 12:06:29 by hubrygo          ###   ########.fr       */
+/*   Updated: 2023/04/11 14:56:58 by hubrygo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,5 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		temp = temp->next;
 	temp->next = new;
 }
+
+//Fonction qui ajoute new a la fin de lst

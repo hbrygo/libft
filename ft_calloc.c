@@ -6,7 +6,7 @@
 /*   By: hubrygo <hubrygo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 11:11:20 by hubrygo           #+#    #+#             */
-/*   Updated: 2023/04/10 14:02:43 by hubrygo          ###   ########.fr       */
+/*   Updated: 2023/04/11 14:54:47 by hubrygo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,3 +24,5 @@ void	*ft_calloc(size_t nmemb, size_t size)
 	ft_bzero(str, size * nmemb);
 	return (str);
 }
+
+//Fonction qui alloue une memoire de nmemb charactere de type size

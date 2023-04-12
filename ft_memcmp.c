@@ -6,7 +6,7 @@
 /*   By: hubrygo <hubrygo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 11:11:40 by hubrygo           #+#    #+#             */
-/*   Updated: 2023/04/05 11:25:36 by hubrygo          ###   ########.fr       */
+/*   Updated: 2023/04/11 15:04:50 by hubrygo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,5 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
+
+//Fonction qui renvoie la 1ere difference entre 's1' et 's2' sur 'n' charactere

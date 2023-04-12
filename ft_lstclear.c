@@ -6,7 +6,7 @@
 /*   By: hubrygo <hubrygo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/10 17:26:08 by hubrygo           #+#    #+#             */
-/*   Updated: 2023/04/11 12:09:45 by hubrygo          ###   ########.fr       */
+/*   Updated: 2023/04/11 14:57:31 by hubrygo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*temp;
 
-	if (!lst)
+	if (!lst || !del)
 		return ;
 	while (*lst)
 	{
@@ -27,3 +27,5 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 	}
 	return ;
 }
+
+//Fonction qui supprime tout une liste chainee

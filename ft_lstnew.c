@@ -6,7 +6,7 @@
 /*   By: hubrygo <hubrygo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/10 16:38:04 by hubrygo           #+#    #+#             */
-/*   Updated: 2023/04/11 11:10:50 by hubrygo          ###   ########.fr       */
+/*   Updated: 2023/04/12 10:09:59 by hubrygo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,6 @@ t_list	*ft_lstnew(void *content)
 	new->next = NULL;
 	return (new);
 }
+
+//Fonction qui cree un nouveau noeud a une list en
+//mettant la valeur content et NULL a next
