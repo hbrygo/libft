@@ -6,15 +6,16 @@
 /*   By: hubrygo <hubrygo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 14:42:56 by hubrygo           #+#    #+#             */
-/*   Updated: 2023/04/11 11:51:07 by hubrygo          ###   ########.fr       */
+/*   Updated: 2023/04/27 19:03:09 by hubrygo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include<unistd.h>
-# include<stdlib.h>
+# include <unistd.h>
+# include <stdlib.h>
+# include <limits.h>
 
 typedef struct s_list
 {

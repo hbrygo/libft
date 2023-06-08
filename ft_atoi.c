@@ -6,7 +6,7 @@
 /*   By: hubrygo <hubrygo@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 14:27:21 by hubrygo           #+#    #+#             */
-/*   Updated: 2023/04/11 14:51:58 by hubrygo          ###   ########.fr       */
+/*   Updated: 2023/06/08 15:00:48 by hubrygo          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,5 +51,3 @@ int	ft_atoi(const char *str)
 	}
 	return (result * sign);
 }
-
-//Fonction qui convertit un int en char en faisant - 48
