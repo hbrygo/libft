@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hubrygo <hubrygo@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hubrygo <hubrygo@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/10 16:57:45 by hubrygo           #+#    #+#             */
 /*   Updated: 2023/04/13 14:18:18 by hubrygo          ###   ########.fr       */
@@ -26,5 +26,3 @@ int	ft_lstsize(t_list *lst)
 	}
 	return (i);
 }
-
-//Fonction qui renvoie le nombre de noeud qu'il y a dans une list

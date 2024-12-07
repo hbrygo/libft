@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hubrygo <hubrygo@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hubrygo <hubrygo@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 11:12:26 by hubrygo           #+#    #+#             */
 /*   Updated: 2023/06/08 15:01:43 by hubrygo          ###   ########.fr       */
@@ -17,8 +17,6 @@ size_t	ft_strlen(const char *c)
 	size_t	i;
 
 	i = 0;
-	if (!c)
-		return (0);
 	while (c[i] != '\0')
 		i++;
 	return (i);

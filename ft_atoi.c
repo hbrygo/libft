@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hubrygo <hubrygo@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hubrygo <hubrygo@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 14:27:21 by hubrygo           #+#    #+#             */
 /*   Updated: 2023/06/08 15:00:48 by hubrygo          ###   ########.fr       */
@@ -17,8 +17,8 @@ static int	skip(char *str)
 	size_t	i;
 
 	i = 0;
-	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n'
-		|| str[i] == '\r' || str[i] == '\v' || str[i] == '\f')
+	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' || str[i] == '\r'
+		|| str[i] == '\v' || str[i] == '\f')
 		i++;
 	return (i);
 }
@@ -34,7 +34,7 @@ int	ft_atoi(const char *str)
 	sign = 1;
 	str += skip((char *)str);
 	if (*str == '-' || *str == '+')
-	{	
+	{
 		if (*str == '-')
 			sign *= -1;
 		str++;

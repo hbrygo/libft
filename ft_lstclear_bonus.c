@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hubrygo <hubrygo@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hubrygo <hubrygo@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/10 17:26:08 by hubrygo           #+#    #+#             */
 /*   Updated: 2023/04/13 14:17:59 by hubrygo          ###   ########.fr       */
@@ -27,5 +27,3 @@ void	ft_lstclear(t_list **lst, void (*del)(void*))
 	}
 	return ;
 }
-
-//Fonction qui supprime tout une liste chainee

@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hubrygo <hubrygo@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hubrygo <hubrygo@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 11:11:53 by hubrygo           #+#    #+#             */
 /*   Updated: 2023/04/11 15:12:27 by hubrygo          ###   ########.fr       */
@@ -35,6 +35,3 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dest);
 }
-
-//fonction qui permet de modifier un tableau comme strcpy mais
-//avec une source = a la dest en utilisant l'overlap

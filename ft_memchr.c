@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hubrygo <hubrygo@student.42.fr>            +#+  +:+       +#+        */
+/*   By: hubrygo <hubrygo@student.s19.be>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/04 11:11:38 by hubrygo           #+#    #+#             */
 /*   Updated: 2023/04/11 15:04:13 by hubrygo          ###   ########.fr       */
@@ -24,5 +24,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 			return ((void *)(str + i));
 	return (0);
 }
-
-//Fonction qui renvoie la 1ere occurence de 'C' sans 's' sur 'n' charactere
