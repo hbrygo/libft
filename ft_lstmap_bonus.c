@@ -12,11 +12,11 @@
 
 #include "libft.h"
 
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list	*temp;
-	t_list	*ret;
-	void	*new_content;
+	t_list *temp;
+	t_list *ret;
+	void *new_content;
 
 	if (!lst || !del || !f)
 		return (NULL);
@@ -28,6 +28,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 		if (!temp)
 		{
 			del(new_content);
+			del(lst->content);
+			free(new_content);
 			ft_lstclear(&ret, del);
 			return (NULL);
 		}
@@ -37,6 +39,6 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	return (ret);
 }
 
-//Fonction qui applique la fonction 'f' recu en argument a chaque element
-//de la list avant de la renvoyer et qui libere 
-//la memoire si une etape se passe mal
+// Fonction qui applique la fonction 'f' recu en argument a chaque element
+// de la list avant de la renvoyer et qui libere
+// la memoire si une etape se passe mal
